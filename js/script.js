@@ -27,9 +27,9 @@ function photoC(node) {
             var divCoord = container.getBoundingClientRect()
                 , divLeft = divCoord.left + container.clientLeft
                 , x = e.clientX - divLeft + original.offsetWidth / 2 - original.offsetWidth / 2
-                , y = e.clientX - divLeft + separator.offsetWidth / 2 - separator.offsetWidth / 2; //Fix it
+                , y = e.clientX - divLeft + separator.offsetWidth / 2 - separator.offsetWidth / 2;
             original.style.width = ((x < 0) ? 0 : (x > widthDiv) ? widthDiv : x) + 'px';
-            separator.style.left = ((y < 0) ? 0 : (y > widthDiv) ? widthDiv : y) + 'px'; //fix it
+            separator.style.left = ((y < 0) ? 0 : (y > widthDiv) ? widthDiv : y) + 'px';
         }
     }
     for (var i = 0; i < controls.length; i++) {
